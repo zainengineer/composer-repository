@@ -18,7 +18,7 @@ echo "Installing satis in " . realpath($satisDir) . PHP_EOL;
 passthru("php $composerBin create-project --keep-vcs --stability=dev composer/satis $satisDir");
 
 echo "Cloning module composer-repository source to " . realpath($magentoComposerRepositorySourceDir) . PHP_EOL;
-passthru("git clone git@github.com:magento-hackathon/composer-repository.git $magentoComposerRepositorySourceDir");
+passthru("git clone git@github.com:zainengineer/composer-repository.git $magentoComposerRepositorySourceDir");
 chdir($magentoComposerRepositorySourceDir);
 passthru("git checkout master");
 

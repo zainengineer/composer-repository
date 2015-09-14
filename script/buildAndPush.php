@@ -36,6 +36,6 @@ passthru("git add .");
 passthru("git commit -a -m \"Updated repository by Buildscript\" ");
 
 //passthru("git push --dry-run");
-passthru("git push");
+passthru("git push origin HEAD");
 
 unlink($lockFile);
